@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Kids' Quiz</title>
+</head>
+<body>
+  <div class="slideshow-container">
+    <div class="slide welcome-slide">
+      <h2>Καλώς ήλθατε στο Μαθισιακο Αντικειμενο Για την Δομη "ΕΠΙΛΕΞΕ"</h2>
+      <p>Ετοιμαστείτε για διασκέδαση και μάθηση!</p>
+      <button id="start-tutorial-button">Έναρξη Οδηγίας</button>
+    </div>
+    <div class="slide tip-slide">
+      <h2>Συμβουλή 1: Έκφραση στην ΕΠΙΛΕΞΕ</h2>
+      <p>Η έκφραση στην ΕΠΙΛΕΞΕ μπορεί να είναι οποιουδήποτε τύπου δεδομένων.</p>
+      <p>Παραδείγματα από το σχολικό εγχειρίδιο: με πραγματικούς αριθμούς στη σελίδα 75 του τετραδίου μαθητή, με αλφαριθμητικά στη σελίδα 269 του βιβλίου μαθητή.</p>
+      <button class="next-slide-button">Επόμενο</button>
+    </div>
+    <div class="slide tip-slide">
+      <h2>Συμβουλή 2: Συγκριτικοί Τελεστές</h2>
+      <p>Οι συγκριτικοί τελεστές επιτρέπονται στην ΕΠΙΛΕΞΕ, π.χ. ΠΕΡΙΠΤΩΣΗ &gt; 20.</p>
+      <p>Σχετικό παράδειγμα υπάρχει στη σελίδα 75 του τετραδίου μαθητή.</p>
+      <button class="next-slide-button">Επόμενο</button>
+    </div>
+    <div class="slide tip-slide">
+      <h2>Συμβουλή 3: Χρήση Συγκριτικών Τελεστών</h2>
+      <p>Όμως, δεν επιτρέπεται η χρήση λογικών τελεστών, δηλαδή για παράδειγμα η ΠΕΡΙΠΤΩΣΗ &gt; 20 ΚΑΙ &lt; 40 δεν είναι αποδεκτή.</p>
+      <button class="next-slide-button">Επόμενο</button>
+    </div>
+    <div class="slide tip-slide">
+      <h2>Συμβουλή 4: Προσέξτε τη σειρά των περιπτώσεων</h2>
+      <p>Προσέξτε τη σειρά των περιπτώσεων στην ΕΠΙΛΕΞΕ. Ο βαθμός θεωρείται πραγματικός και μια τιμή = 9.5 θεωρείται αποδεκτή και έπρεπε να εμφανίσει το μήνυμα 'Κόπηκες'.</p>
+      <button class="next-slide-button">Επόμενο</button>
+    </div>
+    <div class="slide tip-slide">
+      <h2>Συμβουλή 5: Κάθε ΠΕΡΙΠΤΩΣΗ μπορεί να περιέχει πολλές εκφράσεις</h2>
+      <p>Κάθε ΠΕΡΙΠΤΩΣΗ μπορεί να περιέχει πολλές εκφράσεις χωρισμένες με κόμματα, π.χ. ΠΕΡΙΠΤΩΣΗ Τ_Ρ(Ν/2) .. α, β + 25, 10 .. 9.</p>
+      <p>Φυσικά το διάστημα 10 .. 9 είναι σαν να μην υπάρχει στη συγκεκριμένη περίπτωση, αφού το κάτω άκρο είναι μεγαλύτερο από το πάνω άκρο.</p>
+      <button class="next-slide-button">Επόμενο</button>
+    </div>
+    <div class="slide tip-slide">
+      <h2>Συμβουλή 6:Διερμηνευτή της Γλώσσας</h2>
+      <p>Από το Διερμηνευτή της Γλώσσας θεωρείται αποδεκτή μία ΕΠΙΛΕΞΕ που περιέχει μόνο ΠΕΡΙΠΤΩΣΗ ΑΛΛΙΩΣ, αλλά δεν είναι αποδεκτή μία ΕΠΙΛΕΞΕ χωρίς καμία ΠΕΡΙΠΤΩΣΗ.</p>
+      <button class="next-slide-button">Επόμενο</button>
+    </div>
+    <div class="slide tip-slide">
+      <h2>Συμβουλή 7: Αποτίμηση Έκφρασης στην ΕΠΙΛΕΞΕ</h2>
+      <p>Η έκφραση στην ΕΠΙΛΕΞΕ αποτιμάται μία φορά, όχι διαδοχικά σε κάθε περίπτωση.</p>
+      <p>Δηλαδή αν η έκφραση αυτή περιέχει και κλήση σε συνάρτηση, η συνάρτηση θα καλεστεί μόνο κατά την ΕΠΙΛΕΞΕ και όχι σε κάθε ΠΕΡΙΠΤΩΣΗ.</p>
+      <button class="next-slide-button">Επόμενο</button>
+    </div>    
+    <div class="slide tip-slide">
+      <h2>Έτοιμοι για το Κουίζ;</h2>
+      <p>Είστε έτοιμοι να ξεκινήσετε το κουίζ;</p>
+      <button id="start-quiz-button">Έναρξη Κουίζ</button>
+    </div>
+  </div>
+  <div class="quiz-container" id="quiz-container">
+    <div class="question" id="question-1">
+      <h2>Ερωτηση 1: Τι είδους εντολή είναι η "ΕΠΙΛΟΓΗΣ ΕΠΙΛΕΞΕ"; (Επιλέξτε τη σωστή απάντηση)      </h2>
+      <label>
+        <input type="radio" name="q1" value="a"> Επιλογή
+      </label>
+      <label>
+        <input type="radio" name="q1" value="b"> Συνθήκη
+      </label>
+      <label>
+        <input type="radio" name="q1" value="c"> Επανάληψη
+      </label>
+      <button class="next-button">Επόμενο</button>
+    </div>
+    <div class="question" id="question-2">
+      <h2>Ερωτηση 2: Τι είδους εντολή είναι η "ΕΠΙΛΟΓΗΣ ΕΠΙΛΕΞΕ"; (Επιλέξτε τη σωστή απάντηση)      </h2>
+      <label>
+        <input type="radio" name="q1" value="a"> ΑΝ ... ΤΟΤΕ ... ΑΛΛΙΩΣ ... /ΑΝ
+      </label>
+      <label>
+        <input type="radio" name="q1" value="b"> ΕΠΙΛΕΞΕ ... ΠΕΡΙΠΤΩΣΗ ... ΠΕΡΙΠΤΩΣΗ_ΑΛΛΙΩΣ ... ΤΕΛΟΣ_ΕΠΙΛΟΓΩΝ ... /ΕΠΙΛΟΓΗ
+
+      </label>
+      <label>
+        <input type="radio" name="q1" value="c"> ΑΛΛΙΩΣ ... ΕΠΙΛΟΓΗ ... ΤΟΤΕ ... /ΕΠΙΛΟΓΗ
+      </label>
+      <button class="next-button">Επόμενο</button>
+    </div>
+    <div class="question" id="question-3">
+      <h2>Ερωτηση 3: Κάθε 'ΕΠΙΛΟΓΗ' περιέχει μια μόνο περίπτωση και μπορεί να περιέχει μια μόνο <span class="gap"></span>.</h2>
+      <select name="q2" class="gap-select">
+        <option value="">Select an option</option>
+        <option value="data">δομή</option>
+        <option value="condition">Συνθήκη</option>
+        <option value="mandate">εντολή</option>
+        <option value="word">λεξη</option>
+      </select>
+      <button class="next-button">Επόμενο</button>
+    </div>
+    <div class="question" id="question-4">
+      <h2>Ερωτηση 4:  Η δομή 'ΕΠΙΛΟΓΗΣ ΕΠΙΛΕΞΕ' επιτρέπει τον υπολογιστή να επιλέξει μεταξύ<span class="gap"></span>επιλογών.</h2>
+      <select name="q2" class="gap-select">
+        <option value="">Select an option</option>
+        <option value="same">ιδιων</option>
+        <option value="different">διαφορετικών</option>
+        <option value="infinity">απειρων</option>
+        <option value="enough">αρκετων</option>
+      </select>
+      <button class="next-button">Επόμενο</button>
+    </div>
+    <div class="question" id="question-5">
+      <h2>Ερωτηση 5: Μπορούμε να χρησιμοποιήσουμε λογικούς τελεστές όπως "ΚΑΙ" και "Ή" μέσα στις περιπτώσεις της δομής "ΕΠΙΛΟΓΗΣ ΕΠΙΛΕΞΕ". </h2>
+      <label>
+        <input type="radio" name="q1" value="a"> Σωστό
+      </label>
+      <label>
+        <input type="radio" name="q1" value="b"> Λαθος
+      </label>
+      
+      <button class="next-button">Επόμενο</button>
+    </div>
+    <div class="question" id="question-6">
+      <h2>Ερωτηση 6: Ποια από τις παρακάτω δηλώσεις είναι σωστή για τη δομή "ΕΠΙΛΟΓΗΣ ΕΠΙΛΕΞΕ";</h2>
+      <label>
+        <input type="radio" name="q1" value="a"> Μπορούμε να χρησιμοποιήσουμε λογικούς τελεστές στις περιπτώσεις.
+      </label>
+      <label>
+        <input type="radio" name="q1" value="b"> Η έκφραση αποτιμάται διαδοχικά σε κάθε περίπτωση.
+
+      </label>
+      <label>
+        <input type="radio" name="q1" value="c"> Οι περιπτώσεις μπορούν να περιέχουν πολλές εκφράσεις χωρισμένες με κόμματα.
+      </label>
+      <button class="next-button">Επόμενο</button>
+    </div>
+    <div class="question" id="question-7">
+      <h2>Ερωτηση 7: Σε μια περίπτωση "ΕΠΙΛΟΓΗΣ ΕΠΙΛΕΞΕ", μπορούμε να έχουμε μια άπειρη ποσότητα εντολών για κάθε περίπτωση. ;</h2>
+      <label>
+        <input type="radio" name="q1" value="a"> Σωστό
+      </label>
+      <label>
+        <input type="radio" name="q1" value="b"> Λαθος
+      </label>
+      <button class="next-button">Επόμενο</button>
+    </div>
+    <div class="question" id="question-8">
+      <h2>Ερωτηση 8:  Η δομή "ΕΠΙΛΟΓΗΣ ΕΠΙΛΕΞΕ" επιτρέπει τη χρήση<span class="gap"></span>τελεστών στις περιπτώσεις.</h2>
+      <select name="q2" class="gap-select">
+        <option value="">Select an option</option>
+        <option value="logic">λογικών</option>
+        <option value="real">πραγματικων</option>
+        <option value="truth">αλιθινων</option>
+        <option value="enough">πολλων</option>
+      </select>
+      <button class="next-button">Επόμενο</button>
+    </div>
+  </div>
+  <div class="results-container" id="results-container">
+    <p class="score-display" id="score-display"></p>
+    <button class="restart-button" id="restart-button">Επαναληψη Ερωτιματολογιου</button>
+    <button class="home-button" id="home-button">Home</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

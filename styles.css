@@ -1,0 +1,147 @@
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0e68c; /* Pale Goldenrod */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.slideshow-container {
+  max-width: 800px; 
+  background-color: #ffe4b5; /* Moccasin */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.slide {
+  display: none;
+}
+
+.slide h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #ff6347; /* Tomato */
+}
+
+.slide p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #008080; /* Teal */
+}
+
+#start-tutorial-button,
+.next-slide-button,
+#start-quiz-button {
+  background-color: #32cd32; /* Lime Green */
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 20px;
+}
+
+#start-tutorial-button:hover,
+.next-slide-button:hover,
+#start-quiz-button:hover {
+  background-color: #228b22; /* Forest Green */
+}
+
+.quiz-container {
+  max-width: 800px;
+  background-color: #fff8dc; /* Cornsilk */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: none;
+}
+
+.question {
+  display: none;
+  margin-bottom: 30px;
+  background-color: #fafad2; /* Light Goldenrod Yellow */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.question h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ff4500; /* Orange Red */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #696969; /* Dim Gray */
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+.gap-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.next-button {
+  background-color: #32cd32; /* Lime Green */
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 15px;
+}
+
+.next-button:hover {
+  background-color: #228b22; /* Forest Green */
+}
+
+/* Results Container */
+.results-container {
+  display: none;
+  margin-top: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.score-display {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.restart-button, .home-button {
+  background-color: #32cd32; /* Lime Green */
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 15px;
+}
+
+.restart-button:hover, .home-button:hover {
+  background-color: #228b22; /* Forest Green */
+}
